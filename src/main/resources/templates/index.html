@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${titulo}">Biblioteca</title>
+    <link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+<body>
+<header>
+    <h1 th:text="${titulo}">Biblioteca</h1>
+    <p th:text="${mensaje}">Gestión de préstamos de libros</p>
+</header>
+
+<main>
+    <section class="tarjeta">
+        <h2>Hello World</h2>
+        <p>La aplicación está en marcha y el controlador responde correctamente.</p>
+        <p>Endpoint de prueba: <a th:href="@{/hola}">/hola</a></p>
+    </section>
+
+    <section class="tarjeta">
+        <h2>Próximamente</h2>
+        <ul>
+            <li>Catálogo de libros</li>
+            <li>Gestión de usuarios</li>
+            <li>Préstamos y devoluciones</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>FP065 · UOC · Proyecto Biblioteca</p>
+</footer>
+</body>
+</html>
