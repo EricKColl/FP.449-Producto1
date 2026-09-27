@@ -1,0 +1,8 @@
+services:
+  biblioteca:
+    build: .
+    image: biblioteca:latest
+    container_name: biblioteca
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
