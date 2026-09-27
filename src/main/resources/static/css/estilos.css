@@ -1,0 +1,58 @@
+:root {
+    --color-principal: #1f4e79;
+    --color-fondo: #f4f6f9;
+    --color-texto: #222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+header {
+    background: var(--color-principal);
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 0.5rem;
+}
+
+main {
+    max-width: 48rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.tarjeta {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h2 {
+    margin-top: 0;
+    color: var(--color-principal);
+}
+
+a {
+    color: var(--color-principal);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
